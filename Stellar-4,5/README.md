@@ -1,6 +1,7 @@
 # StellarEscrow
 ### Trustless Milestone-Based Freelance Payment Escrow on Stellar
 
+
 ---
 
 ## 📖 Overview
@@ -11,12 +12,14 @@ By locking project funds in a secure, decentralized escrow contract, clients dem
 
 Designed for freelancers, independent contractors, small agencies, and clients, StellarEscrow combines the security and transparency of decentralized finance with a user-friendly, responsive interface. It offers a smooth onboarding experience that hides the complexities of Web3 transactions behind standard user flows, ensuring accessibility for non-technical users.
 
+
 ---
 
 ## 🌐 Live Demo
 
 *   **Live Web Application**: [stellar-escrowlevel5-0.vercel.app](https://stellar-escrowlevel5-0.vercel.app/)
 *   **Video Demonstration**: [Watch Live Demo](https://youtu.be/9TsWzXOsYuQ) *(Level 5 walkthrough of key user flows)*
+*   
 
 ---
 
@@ -37,6 +40,7 @@ Designed for freelancers, independent contractors, small agencies, and clients, 
 ## 🏗️ Architecture
 
 The system comprises a frontend React client, a rust-based Soroban contract, a backend telemetry and feedback server, and integration with third-party monitoring/analytics platforms.
+
 
 ### System Diagram
 
@@ -123,6 +127,8 @@ stateDiagram-v2
 *   **Deployed Contract Address**: `CABRYRJWNR5WVI34LSA667LTXG7NHIRJOAZASX5MTFJK5JHCAD7ILETJ`
 *   **Stellar Expert Link**: [View Contract on Stellar Expert](https://stellar.expert/explorer/testnet/contract/CABRYRJWNR5WVI34LSA667LTXG7NHIRJOAZASX5MTFJK5JHCAD7ILETJ)
 
+*   
+
 ### Contract Interface Functions
 
 *   `create_project(client: Address, freelancer: Address, arbiter: Address, milestones: Vec<MilestoneInput>) -> u64`
@@ -150,6 +156,7 @@ StellarEscrow utilizes a hybrid storage architecture in Soroban to optimize stor
 * **Persistent Storage** is used for project details and milestone states (`Project`, `Milestone`), ensuring that this long-term state remains permanently on the ledger and does not expire while funds are locked in active escrows.
 
 ---
+
 
 ## 🏃 Getting Started & Local Setup
 
@@ -225,7 +232,8 @@ If you want to build and deploy the contract yourself:
 
 ---
 
-## 💡 How to Use
+
+## 💡 How to Use.
 
 ### Client Workflow
 1.  **Connect Wallet**: Click "Connect Wallet" on the top right and approve connection in Freighter.
@@ -244,7 +252,7 @@ If you want to build and deploy the contract yourself:
 
 
 
-## 📊 Monitoring & Analytics
+## 📊 Monitoring & Analytics:
 
 ### Event Telemetry
 We use **PostHog** to monitor operations, track metrics, and evaluate DApp usability. The following custom actions are tracked:
@@ -267,7 +275,7 @@ This logging allows us to maintain a highly stable client interface and resolve 
 
 ---
 
-## 🧪 Testing
+## 🧪 Testing:
 
 ### Smart Contract Tests
 Smart contract logic is tested using Rust's built-in cargo testing framework.
@@ -295,7 +303,7 @@ These tests verify:
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure:
 
 ```text
 SStellarEscrow/
