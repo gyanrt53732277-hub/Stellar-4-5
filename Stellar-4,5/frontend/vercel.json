@@ -1,9 +1,5 @@
 {
-  // Rewrite all routes to index.html for React SPA routing
   "rewrites": [
-    {
-      "source": "/(.*)", // Match every incoming route
-      "destination": "/index.html" // Serve the React app entry point
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
-}
+} add comments
