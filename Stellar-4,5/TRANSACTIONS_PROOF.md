@@ -1,4 +1,4 @@
-# Stellar Testnet Escrow Transaction Proof
+# Stellar Testnet Escrow Transaction Proof.
 
 This file serves as proof of the simulated live transaction activity on the Stellar Testnet by 55 distinct generated wallets.
 
@@ -63,6 +63,8 @@ Below is the list of all 55 wallets created and funded via Stellar Friendbot:
 | User 53 | `GBJWIMQLQ5DFAINT6SIUAW47OPD7MUOUOWNSXHEPONDENKUPONGJBGPS` | [Verify Balance](https://stellar.expert/explorer/testnet/account/GBJWIMQLQ5DFAINT6SIUAW47OPD7MUOUOWNSXHEPONDENKUPONGJBGPS) |
 | User 54 | `GCZH53NMHR6IQ3YQBCNGVMWPQXHBBWHMXCHZJOSV5LKJUEVGRNHCHLFY` | [Verify Balance](https://stellar.expert/explorer/testnet/account/GCZH53NMHR6IQ3YQBCNGVMWPQXHBBWHMXCHZJOSV5LKJUEVGRNHCHLFY) |
 | User 55 | `GBTL5EVUHNZNZ5C27D6IMZOUVL4BP6XEQBYLXANSIINY7OYTM4O5ZMKD` | [Verify Balance](https://stellar.expert/explorer/testnet/account/GBTL5EVUHNZNZ5C27D6IMZOUVL4BP6XEQBYLXANSIINY7OYTM4O5ZMKD) |
+
+
 
 ## On-Chain Transactions
 
