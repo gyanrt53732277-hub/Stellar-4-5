@@ -8,9 +8,12 @@
   transition: border-color 0.3s;
   margin-bottom: 24px;
 
+  /* Change border color on hover */
   &:hover {
     border-color: var(--accent-border);
   }
+
+  /* Show outline for keyboard navigation */
   &:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
@@ -20,6 +23,7 @@
 .hero {
   position: relative;
 
+  /* Center hero images */
   .base,
   .framework,
   .vite {
@@ -27,17 +31,20 @@
     margin: 0 auto;
   }
 
+  /* Base image */
   .base {
     width: 170px;
     position: relative;
     z-index: 0;
   }
 
+  /* Overlay images */
   .framework,
   .vite {
     position: absolute;
   }
 
+  /* Framework logo styling */
   .framework {
     z-index: 1;
     top: 34px;
@@ -46,6 +53,7 @@
       scale(1.4);
   }
 
+  /* Vite logo styling */
   .vite {
     z-index: 0;
     top: 107px;
@@ -56,6 +64,7 @@
   }
 }
 
+/* Center content container */
 #center {
   display: flex;
   flex-direction: column;
@@ -64,37 +73,44 @@
   place-items: center;
   flex-grow: 1;
 
+  /* Responsive layout */
   @media (max-width: 1024px) {
     padding: 32px 20px 24px;
     gap: 18px;
   }
 }
 
+/* Next steps section */
 #next-steps {
   display: flex;
   border-top: 1px solid var(--border);
   text-align: left;
 
+  /* Equal width columns */
   & > div {
     flex: 1 1 0;
     padding: 32px;
+
     @media (max-width: 1024px) {
       padding: 24px 20px;
     }
   }
 
+  /* Icon size */
   .icon {
     margin-bottom: 16px;
     width: 22px;
     height: 22px;
   }
 
+  /* Stack columns on smaller screens */
   @media (max-width: 1024px) {
     flex-direction: column;
     text-align: center;
   }
 }
 
+/* Documentation section */
 #docs {
   border-right: 1px solid var(--border);
 
@@ -104,6 +120,7 @@
   }
 }
 
+/* Social/documentation links */
 #next-steps ul {
   list-style: none;
   padding: 0;
@@ -111,10 +128,12 @@
   gap: 8px;
   margin: 32px 0 0;
 
+  /* Logo size */
   .logo {
     height: 18px;
   }
 
+  /* Link button styling */
   a {
     color: var(--text-h);
     font-size: 16px;
@@ -127,15 +146,19 @@
     text-decoration: none;
     transition: box-shadow 0.3s;
 
+    /* Hover effect */
     &:hover {
       box-shadow: var(--shadow);
     }
+
+    /* Button icon */
     .button-icon {
       height: 18px;
       width: 18px;
     }
   }
 
+  /* Mobile layout */
   @media (max-width: 1024px) {
     margin-top: 20px;
     flex-wrap: wrap;
@@ -153,18 +176,22 @@
   }
 }
 
+/* Bottom spacing section */
 #spacer {
   height: 88px;
   border-top: 1px solid var(--border);
+
   @media (max-width: 1024px) {
     height: 48px;
   }
 }
 
+/* Decorative tick marks */
 .ticks {
   position: relative;
   width: 100%;
 
+  /* Create left and right triangle markers */
   &::before,
   &::after {
     content: '';
@@ -173,10 +200,13 @@
     border: 5px solid transparent;
   }
 
+  /* Left tick */
   &::before {
     left: 0;
     border-left-color: var(--border);
   }
+
+  /* Right tick */
   &::after {
     right: 0;
     border-right-color: var(--border);
