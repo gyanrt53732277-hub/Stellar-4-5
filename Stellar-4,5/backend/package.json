@@ -1,18 +1,16 @@
 {
-  "name": "stellar-escrow-backend", // Project name
-  "version": "1.0.0", // Current version
-  "description": "Backend API for StellarEscrow user feedback collection", // Project description
-  "main": "server.js", // Entry point
-
+  "name": "stellar-escrow-backend",
+  "version": "1.0.0",
+  "description": "Backend API for StellarEscrow user feedback collection",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js", // Start the backend server
-    "init-db": "node init_db.js" // Initialize the database
+    "start": "node server.js",
+    "init-db": "node init_db.js"
   },
-
   "dependencies": {
-    "cors": "^2.8.5", // Enable Cross-Origin Resource Sharing
-    "dotenv": "^16.4.5", // Load environment variables
-    "express": "^4.19.2", // Web framework
-    "sqlite3": "^5.1.7" // SQLite database driver
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
   }
 }
