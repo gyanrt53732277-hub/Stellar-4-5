@@ -11,14 +11,14 @@ prs.slide_width = Inches(13.333)
 prs.slide_height = Inches(7.5)
 
 # Color Palette (Dark Theme / Stellar Brand Colors)
-BG_COLOR = RGBColor(8, 11, 17)        # Very Dark Slate/Black
-CARD_COLOR = RGBColor(16, 22, 35)     # Glassmorphic Slate/Navy
-BORDER_COLOR = RGBColor(30, 41, 59)   # Cool Slate Gray
-TEXT_WHITE = RGBColor(243, 244, 246)  # Gray 100
-TEXT_MUTED = RGBColor(156, 163, 175)  # Gray 400
-ACCENT_BLUE = RGBColor(59, 130, 246)  # Stellar/Soroban Blue
-ACCENT_GOLD = RGBColor(245, 158, 11)  # Lumen Amber/Gold
-ACCENT_PURPLE = RGBColor(139, 92, 246) # Client Purple
+BG_COLOR = RGBColor(8, 11, 17)       
+CARD_COLOR = RGBColor(16, 22, 35)     
+BORDER_COLOR = RGBColor(30, 41, 59)   
+TEXT_WHITE = RGBColor(243, 244, 246)
+TEXT_MUTED = RGBColor(156, 163, 175)
+ACCENT_BLUE = RGBColor(59, 130, 246) 
+ACCENT_GOLD = RGBColor(245, 158, 11) 
+ACCENT_PURPLE = RGBColor(139, 92, 246) 
 
 blank_slide_layout = prs.slide_layouts[6]
 
@@ -156,12 +156,10 @@ draw_card(slide2, Inches(9.5), Inches(2.0), Inches(2.6), Inches(4.3),
           ACCENT_GOLD)
 
 
-# ----------------- SLIDE 3: The Solution -----------------
 slide3 = prs.slides.add_slide(blank_slide_layout)
 apply_background(slide3)
 add_header(slide3, "Trustless Milestone-Based Escrows")
 
-# Left Column (Core features)
 left_box = slide3.shapes.add_textbox(Inches(0.8), Inches(2.0), Inches(5.0), Inches(4.5))
 left_tf = left_box.text_frame
 left_tf.word_wrap = True
@@ -244,7 +242,6 @@ draw_card(slide4, Inches(8.8), Inches(2.0), Inches(3.6), Inches(4.5),
           ACCENT_BLUE)
 
 
-# ----------------- SLIDE 5: Product Demo -----------------
 slide5 = prs.slides.add_slide(blank_slide_layout)
 apply_background(slide5)
 add_header(slide5, "Intuitive Web3 User Experience")
@@ -342,8 +339,6 @@ tel_p.font.size = Pt(11)
 tel_p.font.bold = True
 tel_p.font.color.rgb = TEXT_MUTED
 
-
-# ----------------- SLIDE 7: Market Opportunity -----------------
 slide7 = prs.slides.add_slide(blank_slide_layout)
 apply_background(slide7)
 add_header(slide7, "Market Opportunity: Global Freelance Economy")
