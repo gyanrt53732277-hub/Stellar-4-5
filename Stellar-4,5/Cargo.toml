@@ -1,17 +1,17 @@
 [workspace]
-resolver = "2"
+resolver = "2" # Use Cargo feature resolver v2
 members = [
-    "contracts/escrow_contract",
+    "contracts/escrow_contract", # Escrow contract
 ]
 
 [profile.release]
-opt-level = "z"
-overflow-checks = true
-debug = false
-panic = "abort"
-lto = true
-codegen-units = 1
+opt-level = "z"          # Optimize for binary size
+overflow-checks = true   # Keep overflow checks enabled
+debug = false            # Disable debug info
+panic = "abort"          # Abort on panic
+lto = true               # Enable Link Time Optimization
+codegen-units = 1        # Better optimization
 
 [profile.release-with-logs]
-inherits = "release"
-debug-assertions = true
+inherits = "release"     # Inherit release settings
+debug-assertions = true  # Enable debug assertions
